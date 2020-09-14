@@ -1,0 +1,87 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#FFF4EF;
+  color:#0019FF;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+/*
+.first-block {
+  height:100vh;
+  display: grid;
+  grid-template-columns: 6% 1fr 1fr 1fr 1fr 1fr 6%;
+  grid-template-rows: repeat(3, 1fr);
+}
+*/
+
+.first-block {
+  height:100vh;
+  display: grid;
+  grid-template-columns: auto repeat(5, minmax(200px, 288px)) auto;
+  grid-template-rows: repeat(3, minmax(200px, 288px));
+}
+
+.borderbox {
+  border: 1px solid #0019FF;
+  padding:25px;
+  max-width:288px;
+  max-height: 288px;
+  height:100%;
+  width:100%;
+}
+
+.borderfill {
+  background-color:#0019FF;
+  color:white;
+}
+
+.photobox {
+  background-image: url("img/profile.jpg");
+  background-size:cover;
+  background-position: -73px;
+}
+.hi {
+  font-size: 3.3rem;
+}
+
+.iama {
+  font-size:1.8rem;
+  line-height: 33px;
+  color:#0019FF;
+}
+
+.borderbox:hover {
+  background-color:#0019FF;
+}
+.borderfill:hover {
+  background-color: transparent;
+}
+
+.b16:hover p {
+  color:white;
+}
+.b11:hover h1 {
+  color:#0019FF;
+}
+.qrcode {
+  max-width:200px;
+  height:auto;
+}
+.b19 {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+justify-content:  center;
+align-items: center;
+
+
+}
+.githubtext {
+  color:#0019FF;
+}
